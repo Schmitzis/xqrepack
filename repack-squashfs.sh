@@ -29,6 +29,10 @@ unsquashfs -f -d "$FSDIR" "$IMG"
 
 >&2 echo "patching squashfs..."
 
+#add global firmware language packages
+cp -R ./language-packages/opkg-info/. $FSDIR/usr/lib/opkg/"info"
+cat ./language-packages/languages.txt >>$FSDIR/usr/lib/opkg/status
+
 # modify dropbear init
 sed -i 's/channel=.*/channel=release2/' "$FSDIR/etc/init.d/dropbear"
 sed -i 's/flg_ssh=.*/flg_ssh=1/' "$FSDIR/etc/init.d/dropbear"
