@@ -43,8 +43,8 @@ sed -i 's/Wi-Fi名称/"Nombre Wi-Fi"/g' "$FSDIR/usr/lib/lua/luci/view/web/apinde
 sed -i 's/Wi-Fi密码/"Contraseña"/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
 sed -i 's/Wi-Fi密码/"Contraseña"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
 
-sed -i 's/<a class="btn_wifi" href="<%=luci.dispatcher.build_url("web", "setting", "wifi")%>" >设置</a>/"<a class="btn_wifi" href="<%=luci.dispatcher.build_url("web", "setting", "wifi")%>" >Ajustes</a>"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
-sed -i 's/<a class="btn_wifi" href="<%=luci.dispatcher.build_url("web", "setting", "wifi")%>" >设置</a>/"<a class="btn_wifi" href="<%=luci.dispatcher.build_url("web", "setting", "wifi")%>" >Ajustes</a>"/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
+sed -i 's/>设置/">Ajustes"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
+sed -i 's/>设置/">Ajustes"/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
 
 sed -i 's/小米AIoT路由器 AX3600/"Router AIoT Mi AX3600"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
 sed -i 's/小米AIoT路由器 AX3600/"Router AIoT Mi AX3600"/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
