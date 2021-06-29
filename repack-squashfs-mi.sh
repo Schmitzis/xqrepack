@@ -32,6 +32,7 @@ unsquashfs -f -d "$FSDIR" "$IMG"
 #add global firmware language packages
 cp -R ./language-packages/opkg-info/. $FSDIR/usr/lib/opkg/"info"
 cat ./language-packages/languages.txt >>$FSDIR/usr/lib/opkg/status
+chmod +x $FSDIR/usr/lib/opkg/info/luci-i18n-spanish.prerm
 
 # translate xiaomi stuff to Spanish
 sed -i 's/连接设备数量/"Dispositivos conectados"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
