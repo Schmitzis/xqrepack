@@ -77,8 +77,6 @@ sed -i 's/时区设置/"Región y hora"/g' "./usr/lib/lua/luci/view/web/inc/sysi
 sed -i 's/开启此功能，路由器可自动发现支持畅快连的未初始化Wi-Fi设备，通过米家APP快速配网；修改路由器密码也将自动同步给支持畅快连的设备。/"Con esta función activada, el router puede descubrir automáticamente los dispositivos Wi-Fi no inicializados que admiten Smooth Connect y emparejarlos rápidamente con la red a través de Mi Home App; el cambio de la contraseña del router también se sincronizará automáticamente con los dispositivos que admiten Smooth Connect."/g' "./usr/lib/lua/luci/view/web/setting/wifi.htm"
 sed -i 's/开启此功能，路由器可自动发现支持畅快连的未初始化Wi-Fi设备，通过米家APP快速配网；修改路由器密码也将自动同步给支持畅快连的设备。/"Con esta función activada, el router puede descubrir automáticamente los dispositivos Wi-Fi no inicializados que admiten Smooth Connect y emparejarlos rápidamente con la red a través de Mi Home App; el cambio de la contraseña del router también se sincronizará automáticamente con los dispositivos que admiten Smooth Connect."/g' "./usr/lib/lua/luci/view/web/apsetting/wifi.htm"
 
-
-
 # modify dropbear init
 sed -i 's/channel=.*/channel=release2/' "$FSDIR/etc/init.d/dropbear"
 sed -i 's/flg_ssh=.*/flg_ssh=1/' "$FSDIR/etc/init.d/dropbear"
