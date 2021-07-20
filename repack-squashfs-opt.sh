@@ -35,8 +35,9 @@ chmod 755 "$FSDIR/opt"
 
 # add global firmware language packages
 cp -R ./language-packages/opkg-info/. $FSDIR/usr/lib/opkg/"info"
+cp -R ./uci-defaults/. $FSDIR/etc/uci-defaults/
 cat ./language-packages/languages.txt >>$FSDIR/usr/lib/opkg/status
-chmod +x $FSDIR/usr/lib/opkg/info/luci-i18n-spanish.prerm
+chmod 755 $FSDIR/usr/lib/opkg/info/luci-i18n-spanish.prerm
 
 # translate xiaomi stuff to English
 sed -i 's/连接设备数量/"Dispositivos conectados"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
