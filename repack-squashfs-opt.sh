@@ -54,8 +54,8 @@ sed -i 's/Wi-Fi密码/Contraseña/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm
 sed -i 's/>设置/">Ajustes/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
 sed -i 's/>设置/">Ajustes/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
 
-sed -i 's/小米AIoT路由器 AX3600/"Router AIoT Mi AX3600"/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
-sed -i 's/小米AIoT路由器 AX3600/"Router AIoT Mi AX3600"/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
+sed -i 's/小米AIoT路由器 AX3600/Router AIoT Mi AX3600/g' "$FSDIR/usr/lib/lua/luci/view/web/index.htm"
+sed -i 's/小米AIoT路由器 AX3600/Router AIoT Mi AX3600/g' "$FSDIR/usr/lib/lua/luci/view/web/apindex.htm"
 
 sed -i 's/开启后，2.4G和5G将合并显示为同一个名称，路由器将优先为终端选择5G网络。合并名称后部分终端可能离线，需重新连接。/Cuando la función esté activada, las redes 2,4G y 5G compartirán el mismo nombre. El router elegirá la mejor señal disponible. Por ejemplo, cambiará a la red 5G si el dispositivo está cerca y a la red 2,4G si está lejos. Se pueden producir breves interrupciones durante el cambio./g' "$FSDIR/usr/lib/lua/luci/view/web/setting/wifi.htm"
 sed -i 's/开启后，2.4G和5G将合并显示为同一个名称，路由器将优先为终端选择5G网络。合并名称后部分终端可能离线，需重新连接。/Cuando la función esté activada, las redes 2,4G y 5G compartirán el mismo nombre. El router elegirá la mejor señal disponible. Por ejemplo, cambiará a la red 5G si el dispositivo está cerca y a la red 2,4G si está lejos. Se pueden producir breves interrupciones durante el cambio./g' "$FSDIR/usr/lib/lua/luci/view/web/apsetting/wifi.htm"
