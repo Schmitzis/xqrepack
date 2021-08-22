@@ -72,12 +72,8 @@ sed -i 's/AIoT智能天线自动扫描功能可以自动发现未初始化的小
 sed -i 's/此功能可能在网络拥塞的环境下导致网络出现一定的丢包变多及延时提高的问题。/Esta característica puede provocar cierta pérdida de paquetes y un aumento de la latencia en entornos congestionados./g' "$FSDIR/usr/lib/lua/luci/view/web/setting/wifi.htm"
 sed -i 's/此功能可能在网络拥塞的环境下导致网络出现一定的丢包变多及延时提高的问题。/Esta característica puede provocar cierta pérdida de paquetes y un aumento de la latencia en entornos congestionados./g' "$FSDIR/usr/lib/lua/luci/view/web/apsetting/wifi.htm"
 
-
 sed -i 's/:畅快连/:Conexión rápida/g' "$FSDIR/usr/lib/lua/luci/view/web/setting/wifi.htm"
 sed -i 's/:畅快连/:Conexión rápida/g' "$FSDIR/usr/lib/lua/luci/view/web/apsetting/wifi.htm"
-
-#sed -i 's/此功能可能在网络拥塞的环境下导致网络出现一定的丢包变多及延时提高的问题。/"Esta característica puede causar algunos problemas de red de más pérdida de paquetes y mayor latencia en un entorno de red congestionado."/g' "$FSDIR/usr/lib/lua/luci/view/web/setting/wifi.htm"
-#sed -i 's/此功能可能在网络拥塞的环境下导致网络出现一定的丢包变多及延时提高的问题。/"Esta característica puede causar algunos problemas de red de más pérdida de paquetes y mayor latencia en un entorno de red congestionado."/g' "$FSDIR/usr/lib/lua/luci/view/web/apsetting/wifi.htm"
 
 sed -i 's/时区设置/Región y hora/g' "$FSDIR/usr/lib/lua/luci/view/web/inc/sysinfo_ap.htm"
 sed -i 's/时区设置/Región y hora/g' "$FSDIR/usr/lib/lua/luci/view/web/inc/sysinfo.htm"
